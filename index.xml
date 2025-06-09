@@ -1,1 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>My New Hugo Site</title><link>https://qingshanxiao292311.github.io/</link><description>Recent content on My New Hugo Site</description><generator>Hugo -- 0.147.8</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Jun 2025 15:25:54 +0800</lastBuildDate><atom:link href="https://qingshanxiao292311.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>This is my first blog</title><link>https://qingshanxiao292311.github.io/posts/first/</link><pubDate>Mon, 09 Jun 2025 15:25:54 +0800</pubDate><guid>https://qingshanxiao292311.github.io/posts/first/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>我的博客</title><link>https://qingshanxiao292311.github.io/</link><description>Recent content on 我的博客</description><generator>Hugo -- 0.147.8</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Jun 2025 17:56:12 +0800</lastBuildDate><atom:link href="https://qingshanxiao292311.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Github pages部署</title><link>https://qingshanxiao292311.github.io/posts/hugo-%E9%83%A8%E7%BD%B2/hugo-github%E9%83%A8%E7%BD%B2/</link><pubDate>Mon, 09 Jun 2025 17:56:12 +0800</pubDate><guid>https://qingshanxiao292311.github.io/posts/hugo-%E9%83%A8%E7%BD%B2/hugo-github%E9%83%A8%E7%BD%B2/</guid><description>&lt;ul>
+&lt;li>环境准备&lt;/li>
+&lt;li>安装 &lt;code>hugo&lt;/code>&lt;/li>
+&lt;li>创建 &lt;code>hugo&lt;/code> 博客项目&lt;/li>
+&lt;li>本地访问&lt;/li>
+&lt;li>部署到&lt;code>github pages&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h1 id="1-环境准备">1. 环境准备&lt;/h1>
+&lt;p>windows 10 桌面&lt;/p>
+&lt;h3 id="11-安装-git-客户端">1.1 安装 git 客户端&lt;/h3>
+&lt;p>&lt;a href="https://git-scm.com/downloads">https://git-scm.com/downloads&lt;/a>&lt;/p>
+&lt;h1 id="2-安装-hugo">2. 安装 hugo&lt;/h1>
+&lt;h3 id="21-先安装-chocolateywindows-包管理器">2.1 先安装 &lt;a href="https://chocolatey.org/install">Chocolatey&lt;/a>（Windows 包管理器）&lt;/h3>
+&lt;p>用管理员方式打开powershell&lt;/p>
+&lt;pre tabindex="0">&lt;code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://community.chocolatey.org/install.ps1&amp;#39;))
+&lt;/code>&lt;/pre>&lt;h3 id="22-通过-chocolatey-安装-hugo">2.2 通过 Chocolatey 安装 Hugo&lt;/h3>
+&lt;pre tabindex="0">&lt;code>choco install hugo-extended -y
+&lt;/code>&lt;/pre>&lt;h3 id="23-验证安装">2.3 验证安装&lt;/h3>
+&lt;pre tabindex="0">&lt;code>hugo version
+&lt;/code>&lt;/pre>&lt;h1 id="3-创建-hugo-博客项目">3. 创建 &lt;code>hugo&lt;/code> 博客项目&lt;/h1>
+&lt;h3 id="31-生成新站点">3.1 生成新站点&lt;/h3>
+&lt;p>在任意目录下，本文在 D：目录&lt;/p>
+&lt;pre tabindex="0">&lt;code>cd d:
+hugo new site my-blog
+cd my-blog
+&lt;/code>&lt;/pre>&lt;h3 id="32-克隆主题到本地以-papermod-为例">3.2 克隆主题到本地（以 &lt;a href="https://github.com/adityatelange/hugo-PaperMod">PaperMod&lt;/a> 为例）&lt;/h3>
+&lt;p>参考：https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/&lt;/p>
+&lt;pre tabindex="0">&lt;code>git init
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1
+&lt;/code>&lt;/pre>&lt;h3 id="33-配置主题">3.3 配置主题&lt;/h3>
+&lt;p>修改hugo.yml&lt;/p></description></item></channel></rss>
